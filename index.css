@@ -1,0 +1,248 @@
+:root {
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --border-soft: #e5e7eb;
+  --nav-height: 60px;
+  --radius-pill: 999px;
+  --radius-card: 40px;
+  --shadow-soft: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: var(--text-main);
+}
+
+/* NAVBAR */
+
+.top-nav {
+  height: var(--nav-height);
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #d4d4d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.site-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 13px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4b5563;
+  position: relative;
+}
+
+.nav-link.active {
+  color: #111827;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-btn {
+  font-size: 12px;
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-login {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.nav-signup {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d4d4d8;
+}
+
+.nav-request {
+  background: #f3f4f6;
+  color: #111827;
+  border-color: #e5e7eb;
+}
+
+/* MAIN LAYOUT */
+
+.page-main {
+  min-height: calc(100vh - var(--nav-height) - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agenda {
+  text-align: center;
+  width: 100%;
+  max-width: 720px;
+  margin: 80px auto 120px;
+}
+
+.agenda-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.agenda-shell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.agenda-form {
+  flex: 1 1 0;
+  max-width: 540px;
+  background-color: #f9fafb;
+  border-radius: var(--radius-card);
+  border: 1px solid #e5e7eb;
+  box-shadow: var(--shadow-soft);
+  padding: 18px 22px 10px;
+}
+
+.agenda-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.agenda-form input::placeholder {
+  color: #9ca3af;
+}
+
+/* Buttons under the form – left aligned */
+
+.agenda-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.chip {
+  border-radius: var(--radius-pill);
+  border: none;
+  padding: 5px 12px;
+  font-size: 11px;
+  background-color: #ffffff;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.chip i {
+  font-size: 11px;
+}
+
+.voice-btn {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 10px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.voice-btn i {
+  font-size: 12px;
+}
+
+/* FOOTER */
+
+.page-footer {
+  text-align: center;
+  padding: 16px 24px 24px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ACCESSIBILITY HELPER */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .top-nav {
+    grid-template-columns: auto auto;
+    row-gap: 8px;
+  }
+  .nav-center {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .agenda-shell {
+    flex-direction: column;
+  }
+  .agenda {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}

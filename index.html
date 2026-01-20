@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main – Agenda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-left">
+  <span class="logo-circle">
+ <img src="chatgpt-icon.png" width="26px" height="26px" alt="ChatGPT logo">
+</span>
+<span class="site-name">ChatGPT</span>
+
+    </div>
+
+    <nav class="nav-center" aria-label="Main navigation">
+      <a href="index.html" class="nav-link active">Main</a>
+      <a href="images.html" class="nav-link">Images</a>
+      <a href="agent.html" class="nav-link">Agent</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="nav-btn nav-login">Log in</button>
+      <button class="nav-btn nav-signup">Sign up</button>
+      <button class="nav-btn nav-request">Request info</button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="agenda" aria-labelledby="agenda-title">
+      <h1 id="agenda-title" class="agenda-title">
+        What’s on the agenda today?
+      </h1>
+
+      <div class="agenda-shell">
+        <form class="agenda-form">
+          <label for="agenda-input" class="visually-hidden">Ask anything</label>
+          <input
+            id="agenda-input"
+            type="text"
+            placeholder="Ask anything"
+            required
+          />
+
+          <!-- Buttons under the form, left aligned -->
+          <div class="agenda-actions">
+            <button type="button" class="chip">
+            <i class="fa-solid fa-paperclip"></i> 
+              Attach
+            </button>
+            <button type="button" class="chip">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Search
+            </button>
+            <button type="button" class="chip">
+             <i class="fa-solid fa-book-open"></i>
+              Study
+            </button>
+            <button type="button" class="chip">
+              <i class="fa-regular fa-image"></i>
+              Create image
+            </button>
+          </div>
+          <button type="button" class="voice-btn">
+            <i class="fa-solid fa-microphone"></i>
+            Voice
+          </button>
+        </form>
+
+ 
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+  
+  </footer>
+</body>
+</html>

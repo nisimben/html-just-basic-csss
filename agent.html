@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="agent.css" />
+</head>
+<body>
+ 
+  <header class="top-nav">
+    <div class="nav-left">
+      <span class="logo-circle">
+        <img src="chatgpt-icon.png" width="26px" height="26px" alt="ChatGPT logo">
+      </span>
+      <span class="site-name">ChatGPT</span>
+    </div>
+
+    <nav class="nav-center" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Main</a>
+      <a href="images.html" class="nav-link">Images</a>
+      <a href="agent.html" class="nav-link active">Agent</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="nav-btn nav-login">Log in</button>
+      <button class="nav-btn nav-signup">Sign up</button>
+      <button class="nav-btn nav-request">Request info</button>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="agent-layout">
+      <!-- Left text block, vertically centered -->
+      <article class="agent-copy">
+        <h1 class="agent-title">ChatGPT agent</h1>
+        <p class="agent-body">
+          ChatGPT can interact with websites directly on your behalf to book
+          appointments, create slide decks, and more, handling complex tasks from
+          start to finish.
+        </p>
+        <p class="agent-note">
+          Available in ChatGPT Plus, Pro, Business, and Enterprise.
+        </p>
+
+        <button class="agent-cta">Try now</button>
+      </article>
+
+      <!-- Right: blue background image/illustration area -->
+      <aside class="agent-visual" aria-label="Agent task example">
+        <div class="blue-panel">
+          <div class="agent-card">
+            <div class="card-header">
+              <!-- Rounded-corners text box with lightbulb inside -->
+              <span class="marker">
+                <i class="fa-regular fa-lightbulb"></i>
+              </span>
+              <span class="card-title">Opening company mascot image</span>
+            </div>
+            <p class="card-body">
+              I will start by designing a cute anime-style sticker for the
+              mascot to celebrate the 5th anniversary.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+ 
+  </footer>
+</body>
+</html>
