@@ -33,23 +33,24 @@ body {
   height: var(--nav-height);
   padding: 0 32px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  
   align-items: center;
   border-bottom: 1px solid #d1d5db;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.nav-right {
 
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    place-self: center;
+}
 .logo-circle {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 1px solid #d4d4d8;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   font-size: 12px;
@@ -61,7 +62,6 @@ body {
 }
 
 .nav-center {
-  display: flex;
   justify-content: center;
   gap: 32px;
   font-size: 13px;
@@ -78,7 +78,7 @@ body {
 }
 
 .nav-right {
-  display: flex;
+
   align-items: center;
   gap: 8px;
 }
@@ -113,7 +113,7 @@ body {
 
 .page-main {
   min-height: calc(100vh - var(--nav-height) - 60px);
-  display: flex;
+  
   align-items: center;
   justify-content: center;
 }
@@ -132,14 +132,14 @@ body {
 }
 
 .agenda-shell {
-  display: flex;
+
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
 
 .agenda-form {
-  flex: 1 1 0;
+
   max-width: 540px;
   background-color: #f9fafb;
   border-radius: var(--radius-card);
@@ -164,10 +164,9 @@ body {
 /* Buttons under the form – left aligned */
 
 .agenda-actions {
-  display: flex;
-  flex-wrap: wrap;
+
   gap: 8px;
-  justify-content: flex-start;
+
 }
 
 .chip {
@@ -177,7 +176,7 @@ body {
   font-size: 11px;
   background-color: #ffffff;
   color: var(--text-muted);
-  display: inline-flex;
+
   align-items: center;
   gap: 6px;
   cursor: pointer;
@@ -192,7 +191,7 @@ body {
   border: 1px solid #e5e7eb;
   background-color: #ffffff;
   padding: 10px 18px;
-  display: inline-flex;
+
   align-items: center;
   gap: 6px;
   font-size: 12px;
@@ -239,7 +238,7 @@ body {
 
 @media (max-width: 640px) {
   .agenda-shell {
-    flex-direction: column;
+
   }
   .agenda {
     margin-top: 40px;
